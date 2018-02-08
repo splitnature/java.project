@@ -1,0 +1,19 @@
+// personal website
+function loadRepo(url, callback) {
+  const gitHubRequest = new XMLHttpRequest();
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("repositories").innerHTML = this.responseText;
+   }  // Fnish your request here
+    // Don't forget the callback()
+}
+newrequest.open("get","https://api.github.com/users/splitnature/repos",true)
+newrequest.send();
+
+function loadRepoCallback(gitHubRequest) {
+  // Callback function needs to parse the JSON
+  // Using the DOM get the element ID from your <ul> in your HTML
+  // You will need a forEach to loop through the parsed object
+  // Using the DOM create new list elements
+  // Plug in the .html_url and .name from the parsed object.  To make this a link you'll need
+  // Append the new list items to the element you retrieved from HTML
+}
